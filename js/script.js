@@ -888,13 +888,16 @@ renderer.render(scene);
 	var animate = function () {
 		requestAnimationFrame( animate );
 		
-			if(perdendo == true) {
+			if(perdendo == true && vida != 0) {
 				tempoCaindo++;
 				camera.position.y-=0.1;
 				camera.rotation.x+=0.001;
 				KeyEsquerda = false;
 				KeyDireita = false;
-				if(tempoCaindo > 150) morreu();  //vida = 0;
+				if(tempoCaindo > 150){
+					morreu();  //
+					vida = 0;
+				} 
 				
 			}
 			
