@@ -1352,12 +1352,16 @@ function personagem(qual_personagem){
     function update(){ // fica em um loop pra poder desenhar na telas
         zezim.move();
 		
+
+		
+
+		/*
 		if(pontosDuranteJogo >= recorde){ // verifica se a pontuacao feita foi maior que o recorde
 			//recorde = pontosDuranteJogo;
 			window.location.href = 'index.html?' + recorde; // recuperar a pontuacao por url
 		}
 
-		/*
+		
         if(vida == 0){ // verifica quando o personagem morreu
 			
             //alert("VOCÊ PERDEU !");
@@ -1510,7 +1514,7 @@ function pontuacao(){
 	recorde = url.replace("?", ""); // deixa apenas qual o numero do recorde
 	
     if(recorde == ""){ // se for a primeira vez que a pessoa esta jogando
-        recorde = 15;
+        recorde = 25;
     }
 
     var pontuacao = document.createElement("h3"); // crando a pontuacao como um h3
@@ -1674,5 +1678,8 @@ function chamaCanvas(personagem){ // funcao para remover as imagens dos personag
 }
 
 function morreu(){
-	window.location.href = 'index.html?' + recorde; // recuperar a pontuacao por url
+	
+	if(pontosDuranteJogo == 15){
+		window.location.href = 'index.html?' + recorde; // recuperar a pontuacao por url
+	}
 }
