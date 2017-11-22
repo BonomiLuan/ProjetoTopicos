@@ -1679,7 +1679,7 @@ function chamaCanvas(personagem){ // funcao para remover as imagens dos personag
 
 function morreu(){
 	
-	if(pontosDuranteJogo == 15){
+	if(pontosDuranteJogo >= recorde){
 		window.location.href = 'index.html?' + recorde; // recuperar a pontuacao por url
 	}
 }
