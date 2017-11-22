@@ -1508,7 +1508,7 @@ function pontuacao(){
 	recorde = url.replace("?", ""); // deixa apenas qual o numero do recorde
 	
     if(recorde == ""){ // se for a primeira vez que a pessoa esta jogando
-        recorde = 0;
+        recorde = 99999;
     }
 
     var pontuacao = document.createElement("h3"); // crando a pontuacao como um h3
