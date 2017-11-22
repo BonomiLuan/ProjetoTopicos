@@ -1441,7 +1441,7 @@ function home(qual_personagem){
 	
 
 	//chamarAPI(backG);
-	backG.setAttribute("src", "../logoPadrao.png");
+	backG.setAttribute("src", "img/logoPadrao.png");
 
 
 	backG.setAttribute("id", "backG");
