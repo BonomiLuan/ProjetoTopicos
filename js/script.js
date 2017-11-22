@@ -895,7 +895,7 @@ renderer.render(scene);
 				KeyEsquerda = false;
 				KeyDireita = false;
 				if(tempoCaindo > 150){
-					morreu();  //
+					morreu(); 
 					vida = 0;
 				} 
 				
@@ -1354,21 +1354,6 @@ function personagem(qual_personagem){
     
     function update(){ // fica em um loop pra poder desenhar na telas
         zezim.move();
-		
-
-		
-
-		/*
-		if(pontosDuranteJogo >= recorde){ // verifica se a pontuacao feita foi maior que o recorde
-			//recorde = pontosDuranteJogo;
-			window.location.href = 'index.html?' + recorde; // recuperar a pontuacao por url
-		}
-
-		
-        if(vida == 0){ // verifica quando o personagem morreu
-			
-            //alert("VOCÊ PERDEU !");
-        }*/
     }
     
     // funcao que desenha na tela
@@ -1398,9 +1383,6 @@ function chamaHome(){
 function tempo(){ // funcao de tempo para fazer a pontuacao
     tempo = window.setInterval(function(){
         pontosDuranteJogo++;
-        //if(pontosDuranteJogo == 5)vida = 2; // teste para perder vida, se recorde chegar a 5 perde uma vida
-        //if(pontosDuranteJogo == 10)vida = 1; // se chegar a 10 perde 2 vidas
-        //if(pontosDuranteJogo == 15)vida = 0; // se chegar a 15 perde 3 vidas
     }, 1000);
 }
 
@@ -1419,7 +1401,7 @@ function tempoMenu(){ // funcao para fazer um easter egg no Menu
 		}
     }, 1000);
 }
-/*
+
 function chamarAPI(backG){
 	jQuery(function($){   
 		function getWeather(){  //função que conecta pagina a API 
@@ -1449,7 +1431,7 @@ function chamarAPI(backG){
 		getWeather();
 	})
 }
-*/
+
 function home(qual_personagem){
 
 	tempoMenu(); // chama o easter egg
@@ -1458,8 +1440,8 @@ function home(qual_personagem){
 	var backG = document.createElement("img"); 
 	
 
-	//chamarAPI(backG);
-	//p2.setAttribute("src", "../mudar img.png");
+	chamarAPI(backG);
+	//backG.setAttribute("src", "../mudar img.png");
 
 
 	backG.setAttribute("id", "backG");
