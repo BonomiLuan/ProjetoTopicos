@@ -1351,11 +1351,11 @@ function personagem(qual_personagem){
     
     function update(){ // fica em um loop pra poder desenhar na telas
         zezim.move();
-		
+		/*
 		if(pontosDuranteJogo >= recorde){ // verifica se a pontuacao feita foi maior que o recorde
 			recorde = pontosDuranteJogo;
 		}
-		/*
+		
         if(vida == 0){ // verifica quando o personagem morreu
 			
             //alert("VOCÊ PERDEU !");
