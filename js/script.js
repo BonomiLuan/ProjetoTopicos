@@ -1459,6 +1459,7 @@ function home(qual_personagem){
 	
 
 	//chamarAPI(backG);
+	//p2.setAttribute("src", "../mudar img.png");
 
 
 	backG.setAttribute("id", "backG");
