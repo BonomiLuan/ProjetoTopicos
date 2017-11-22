@@ -1,0 +1,101 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: black;
+    /*background-size: cover;*/
+}
+
+
+h1{
+    margin-top: 3vw;
+    font-size: 4vw;
+    color: #B8B2B2;
+}
+
+h3{
+    margin-top: 1.5vw;
+    font-size: 2vw;
+    color: #B8B2B2;
+}
+
+p{
+    font-size: 1vw;
+    color: #FFFFFF;
+}
+
+#telaAzul{
+	width: 100vw;
+	height: 100vh;
+}
+
+#DescricaoPersonagem{ /*texto de descricao dos personagens da pagina Personagens.html*/
+	color:white;
+    font-size:2vw;
+}
+
+#pontuacao{
+    margin-top: 1.5vw;
+    font-size: 2vw;
+    color: #F0F0F0;
+}
+
+#menu{
+    margin-top: 10vw;
+}
+
+#nomeJogo{
+    font-size: 10vw;
+}
+
+#myDiv{
+    margin-top: 2vw;
+    width: 15%;
+    margin-left: 42vw;
+}
+
+.botao{
+    background: blue;
+    color: white;
+    margin-top: 1vw;
+    font-size: 2vw;
+    width: 100%;
+    height: 3vw;
+}
+
+#botaoVoltar{
+    background: blue;
+    color: white;
+    margin-top: 1vw;
+    font-size: 2vw;
+    width: 15%;
+    height: 3vw;
+}
+
+#myCanvas{
+    /*border: 1px solid white;*/
+    position: absolute; 
+    width: 100vw;
+    height: 100vh;
+    z-index: 0; 
+}
+
+#setas_img{
+    width: 15vw;
+    height: 20vh;
+}
+
+.img{
+    margin-left:1.5vw;
+    width: 10vw;
+    height: 10vw;
+    margin-top: 10vw;
+    border: 0.3vw solid rgba(255, 255, 255, 0);
+}
+
+.imgMenu{
+    margin-top: 2vw;
+    height: 25vh;
+    width: 60vw;
+}
