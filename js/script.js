@@ -1680,6 +1680,7 @@ function chamaCanvas(personagem){ // funcao para remover as imagens dos personag
 function morreu(){
 	clearInterval(tempo); // stop the interval
 	if(pontosDuranteJogo >= recorde){
+		recorde = pontosDuranteJogo;
 		window.location.href = 'index.html?' + recorde; // recuperar a pontuacao por url
 	}else{
 		window.location.href = 'index.html?' + recorde; // recuperar a pontuacao por url
