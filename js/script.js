@@ -894,7 +894,7 @@ renderer.render(scene);
 				camera.rotation.x+=0.001;
 				KeyEsquerda = false;
 				KeyDireita = false;
-				if(tempoCaindo > 150) vida = 0;
+				if(tempoCaindo > 150) morreu();  //vida = 0;
 				
 			}
 			
@@ -1355,11 +1355,11 @@ function personagem(qual_personagem){
 		if(pontosDuranteJogo >= recorde){ // verifica se a pontuacao feita foi maior que o recorde
 			recorde = pontosDuranteJogo;
 		}
-
+		/*
         if(vida == 0){ // verifica quando o personagem morreu
-			window.location.href = 'index.html?' + recorde; // recuperar a pontuacao por url
+			
             //alert("VOCÊ PERDEU !");
-        }
+        }*/
     }
     
     // funcao que desenha na tela
@@ -1669,4 +1669,8 @@ function chamaCanvas(personagem){ // funcao para remover as imagens dos personag
     document.getElementById("personagem4").remove();
     document.getElementById("personagem5").remove();
     createCenario(personagem); // passar o personagem por parametro
+}
+
+function morreu(){
+	window.location.href = 'index.html?' + recorde; // recuperar a pontuacao por url
 }
