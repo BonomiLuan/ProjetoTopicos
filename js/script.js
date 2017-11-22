@@ -1440,8 +1440,8 @@ function home(qual_personagem){
 	var backG = document.createElement("img"); 
 	
 
-	chamarAPI(backG);
-	//backG.setAttribute("src", "../mudar img.png");
+	//chamarAPI(backG);
+	backG.setAttribute("src", "../logoPadrao.png");
 
 
 	backG.setAttribute("id", "backG");
