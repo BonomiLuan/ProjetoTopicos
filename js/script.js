@@ -1514,7 +1514,7 @@ function pontuacao(){
 	recorde = url.replace("?", ""); // deixa apenas qual o numero do recorde
 	
     if(recorde == ""){ // se for a primeira vez que a pessoa esta jogando
-        recorde = 25;
+        recorde = 0;
     }
 
     var pontuacao = document.createElement("h3"); // crando a pontuacao como um h3
@@ -1531,7 +1531,7 @@ function desbloqueiaPersonagens(){ //apartir do recorde, altera a imagem para mo
 }
 
 function jogar(qual_personagem){ // funcao para limpar o menu e comecar o jogo
-	dormiu = 99;
+	clearInterval(tempoM); // stop the interval
     document.getElementById("myDiv").remove();
 	document.getElementById("pontuacao").remove();
 	document.getElementById("backG").remove();
@@ -1539,7 +1539,7 @@ function jogar(qual_personagem){ // funcao para limpar o menu e comecar o jogo
 }
 
 function personagens(){ // funcao para limpar o menu e mostrar os personagens
-	dormiu = 99;
+	clearInterval(tempoM); // stop the interval
 	document.getElementById("myDiv").remove();
 	document.getElementById("pontuacao").remove();
 	document.getElementById("backG").remove();
@@ -1548,13 +1548,13 @@ function personagens(){ // funcao para limpar o menu e mostrar os personagens
 }
 
 function ajuda(){ // abre a pagina de ajuda
-	dormiu = 99;
+	clearInterval(tempoM); // stop the interval
     window.open("ajuda.html", "_blank"); // abre a pagina de ajuda
 }
 
 function compartilhar(){
 	// abre a pagina de compartilhar
-	dormiu = 99;
+	clearInterval(tempoM); // stop the interval
     window.open("https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2FInside-PC-Run-512604709138111%2F&amp%3Bsrc=sdkpreparse%22%2C%22_self","_blank");
 }
 
